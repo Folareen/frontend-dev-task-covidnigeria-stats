@@ -7,6 +7,10 @@
     font-family: Roboto;
 }
 
+main{
+    background-color: rgb(193, 241, 193);
+}
+
 header{
     width: 90%;
     margin: auto;
@@ -16,7 +20,7 @@ header{
     align-items: center;
     // background-image: url(../../assets/covid.jpg);
     // object-fit: cover;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 
     h1{
         margin: 5px 0;
@@ -31,17 +35,48 @@ header{
 }
 
 .grey{
-    background-color: grey;
+    background-color: rgb(159, 154, 116);
 }
 .blue{
-    background-color: blue;
+    background-color: rgb(4, 146, 194);
 }
 .yellow{
-    background-color: yellow;
+    background-color: rgb(255, 200, 45);
 }
 .green{
-    background-color: green;
+    background-color: rgb(18, 135, 80);
 }
 .red{
-    background-color: red;
+    background-color: rgb(254, 0, 0);
+}
+
+.stat--table-container{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 15px 10px;
+    margin: 10px;
+
+    h2{
+        margin-bottom: 10px;
+    }
+}
+
+table, tr, td{
+    border: 1px solid rgb(175, 175, 175);
+}
+tr:nth-child(odd){
+    background-color: rgb(207, 207, 207);
+}
+tr:nth-child(even){
+    background-color: rgb(241, 241, 241);
+}
+
+th{
+    color: white;
+    font-weight: bold;
+    padding: 15px 10px;
+    background-color: rgb(18, 135, 80);
+}
+
+td{
+    padding: 10px 5px;
 }

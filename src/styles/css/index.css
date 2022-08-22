@@ -7,6 +7,10 @@
   font-family: Roboto;
 }
 
+main {
+  background-color: #c1f1c1;
+}
+
 header {
   width: 90%;
   margin: auto;
@@ -21,8 +25,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 header h1 {
@@ -40,22 +44,56 @@ header h1 {
 }
 
 .grey {
-  background-color: grey;
+  background-color: #9f9a74;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #0492c2;
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #ffc82d;
 }
 
 .green {
-  background-color: green;
+  background-color: #128750;
 }
 
 .red {
-  background-color: red;
+  background-color: #fe0000;
+}
+
+.stat--table-container {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  padding: 15px 10px;
+  margin: 10px;
+}
+
+.stat--table-container h2 {
+  margin-bottom: 10px;
+}
+
+table, tr, td {
+  border: 1px solid #afafaf;
+}
+
+tr:nth-child(odd) {
+  background-color: #cfcfcf;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+th {
+  color: white;
+  font-weight: bold;
+  padding: 15px 10px;
+  background-color: #128750;
+}
+
+td {
+  padding: 10px 5px;
 }
 /*# sourceMappingURL=index.css.map */
