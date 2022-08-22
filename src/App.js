@@ -1,7 +1,16 @@
+import React from "react";
 import "./styles/css/index.css";
+import displayDateAndTime from "./utils/displayDateAndTime";
 
-function App() {
-  return <div>Covid19 statistics in nigeria</div>;
-}
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Covid-19 Statistics in Nigeria</h1>
+        <p>{displayDateAndTime()}</p>
+      </header>
+    </div>
+  );
+};
 
 export default App;
