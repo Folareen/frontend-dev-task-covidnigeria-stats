@@ -9,6 +9,7 @@
 
 main{
     background-color: rgb(193, 241, 193);
+    min-height: 100vh;
 }
 
 header{
@@ -21,6 +22,7 @@ header{
     // background-image: url(../../assets/covid.jpg);
     // object-fit: cover;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
 
     h1{
         margin: 5px 0;
@@ -75,8 +77,16 @@ th{
     font-weight: bold;
     padding: 15px 10px;
     background-color: rgb(18, 135, 80);
+    word-break: break-all;
+    // word-wrap: break-word;
 }
 
 td{
     padding: 10px 5px;
+}
+
+.loading{
+    height: 80vh;
+    display: grid;
+    place-content: center;
 }

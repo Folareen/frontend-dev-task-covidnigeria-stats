@@ -9,6 +9,7 @@
 
 main {
   background-color: #c1f1c1;
+  min-height: 100vh;
 }
 
 header {
@@ -27,6 +28,7 @@ header {
           align-items: center;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
 header h1 {
@@ -91,9 +93,17 @@ th {
   font-weight: bold;
   padding: 15px 10px;
   background-color: #128750;
+  word-break: break-all;
 }
 
 td {
   padding: 10px 5px;
+}
+
+.loading {
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 /*# sourceMappingURL=index.css.map */
