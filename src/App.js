@@ -4,21 +4,16 @@ import TotalStatCard from "./components/TotalStatCard";
 import "./styles/css/index.css";
 import displayDateAndTime from "./utils/displayDateAndTime";
 import { TailSpin } from "react-loader-spinner";
+import { getCovidData } from "./redux/features/covidDataSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const App = () => {
-  const [statsData, setStatsData] = useState();
-  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
+  const { loading, covidData } = useSelector((store) => store.covidData);
 
   useEffect(() => {
-    (async function () {
-      const response = await fetch("https://covidnigeria.herokuapp.com/api");
-      const data = await response.json();
-      console.log(data);
-      console.log("done!");
-      setStatsData(data);
-      setLoading(false);
-      console.log(statsData);
-    })();
+    dispatch(getCovidData);
+    console.log(covidData);
   }, []);
 
   return (
