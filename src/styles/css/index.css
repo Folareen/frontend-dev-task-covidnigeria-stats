@@ -35,14 +35,29 @@ header h1 {
   margin: 5px 0;
 }
 
+.total--stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
 .stat--card {
-  padding: 5px;
+  padding: 15px 30px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   color: white;
+  margin: 10px;
+  text-transform: capitalize;
 }
 
 .grey {
@@ -74,6 +89,7 @@ header h1 {
 
 .stat--table-container h2 {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 table, tr, td {
@@ -86,6 +102,10 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
   background-color: #f1f1f1;
+}
+
+table {
+  margin: auto;
 }
 
 th {

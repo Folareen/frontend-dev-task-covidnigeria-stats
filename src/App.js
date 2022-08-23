@@ -41,12 +41,32 @@ const App = () => {
         </div>
       ) : (
         <>
-          <div>
+          <div className="total--stats">
             {/* {covidData.data} */}
             <TotalStatCard
               statBg={"red"}
               statTitle={"death"}
-              statValue={30000}
+              statValue={covidData.data.death}
+            />
+            <TotalStatCard
+              statBg={"green"}
+              statTitle={"disharged"}
+              statValue={covidData.data.discharged}
+            />
+            <TotalStatCard
+              statBg={"yellow"}
+              statTitle={"total active cases"}
+              statValue={covidData.data.totalActiveCases}
+            />
+            <TotalStatCard
+              statBg={"blue"}
+              statTitle={"total confirmed cases"}
+              statValue={covidData.data.totalConfirmedCases}
+            />
+            <TotalStatCard
+              statBg={"grey"}
+              statTitle={"total samples tested"}
+              statValue={covidData.data.totalSamplesTested}
             />
           </div>
 
