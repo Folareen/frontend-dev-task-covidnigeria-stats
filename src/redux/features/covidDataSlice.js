@@ -7,7 +7,7 @@ const initialState = {
   loading: true,
 };
 
-export const getCovidData = createAsyncThunk("covidData/getcovidData", () => {
+export const getCovidData = createAsyncThunk("covidData/getCovidData", () => {
   return fetch(covidNigeriaApiUrl)
     .then((resp) => resp.json())
     .catch((err) => console.log(err));

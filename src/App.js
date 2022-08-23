@@ -12,8 +12,8 @@ const App = () => {
   const { loading, covidData } = useSelector((store) => store.covidData);
 
   useEffect(() => {
-    dispatch(getCovidData);
-    console.log(covidData);
+    dispatch(getCovidData());
+    console.log("dispatch");
   }, []);
 
   return (
@@ -42,6 +42,7 @@ const App = () => {
       ) : (
         <>
           <div>
+            {/* {covidData.data} */}
             <TotalStatCard
               statBg={"red"}
               statTitle={"death"}
@@ -70,7 +71,7 @@ const App = () => {
                   deathStat={94}
                 />
 
-                {covidData.data.map(
+                {covidData.data.states.map(
                   ({
                     casesOnAdmission,
                     confirmedCases,
