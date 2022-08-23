@@ -23,6 +23,7 @@ const covidDataSlice = createSlice({
     [getCovidData.fulfilled]: (state, action) => {
       state.loading = false;
       state.covidData = action.payload;
+      console.log(state.covidData);
     },
     [getCovidData.rejected]: (state) => {
       state.loading = false;

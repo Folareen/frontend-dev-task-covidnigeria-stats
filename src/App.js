@@ -69,13 +69,27 @@ const App = () => {
                   admittedCases={9494}
                   deathStat={94}
                 />
-                <StatesStat
-                  stateName={"lagos"}
-                  confirmedCases={2344}
-                  dishargedCases={8944}
-                  admittedCases={9494}
-                  deathStat={94}
-                />
+
+                {covidData.data.map(
+                  ({
+                    casesOnAdmission,
+                    confirmedCases,
+                    death,
+                    discharged,
+                    state,
+                    id,
+                  }) => {
+                    return (
+                      <StatesStat
+                        stateName={state}
+                        confirmedCases={confirmedCases}
+                        dishargedCases={discharged}
+                        admittedCases={casesOnAdmission}
+                        deathStat={death}
+                      />
+                    );
+                  }
+                )}
               </tbody>
             </table>
           </div>
